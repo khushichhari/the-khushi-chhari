@@ -1,0 +1,164 @@
+/* original css */
+.abt-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add some space between the sections */
+    padding: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .skills {
+    flex: 1; /* Take up 1 part of the available width */
+    max-width: 40%; /* Ensure it doesn't exceed 40% of the container */
+    margin-left: 8rem;
+    margin-top: 9rem;
+  }
+  
+  .skills h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .skills button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color:  rgba(0, 0, 0, 0.2);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills button:hover {
+    background-color:  rgba(0,0,0, 0.5);
+  }
+
+  .abt-para {
+    flex: 2; /* Take up 2 parts of the available width */
+    max-width: 60%; /* Ensure it doesn't exceed 60% of the container */
+    margin-right: 8rem;
+    margin-left: 9rem;
+    margin-top: 9rem;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 540;
+
+  }
+  
+  .abt-para h1 {
+    font-size: 32px; /* Heading font size */
+    font-weight: bold; /* Make the heading bold */
+    color: black; /* Optional: Add a color to distinguish it */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+    text-align: right; /* Align heading to the left */
+    margin-right: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .abt-para p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+  }
+  
+
+  /* Fade-in animation */
+.fade-in {
+  opacity: 0; /* Start with invisible */
+  transform: translateY(60px); /* Move slightly downward */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth effect */
+}
+
+.fade-in.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Back to original position */
+}
+
+
+
+
+/* For 1024px (tablet screens and below) */
+@media (max-width: 1024px) {
+  .abt-container {
+      flex-direction: column; /* Stack the sections vertically */
+      padding: 10px;
+  }
+  .skills, .abt-para {
+    margin: 0;
+      width: 100%;
+      padding: 1rem;
+  }
+  .skills {
+      max-width: 100%;
+      margin-left: 0;
+  }
+  .abt-para h1 {
+      font-size: 28px;
+      text-align: center;
+
+  }
+  .skills h2 {
+      font-size: 20px;
+  }
+  .skills button {
+      padding: 8px 15px;
+  }
+}
+
+/* For 768px (smaller tablets and phones in landscape mode) */
+@media (max-width: 768px) {
+  .skills {
+      max-width: 100%;
+      margin-left: 0;
+  }
+  .abt-para {
+    
+    padding: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+  }
+  .abt-para h1 {
+      font-size: 24px;
+      text-align: center;
+  }
+  .skills h2 {
+      font-size: 18px;
+  }
+  .skills button {
+      padding: 7px 12px;
+  }
+}
+
+/* For 480px (mobile screens) */
+@media (max-width: 480px) {
+  .abt-container {
+      padding: 10px;
+      height:130vh;
+  }
+  .skills, .abt-para {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1rem;
+      padding: 1rem;
+  }
+  .abt-para h1 {
+      font-size: 20px;
+      text-align: center;
+      margin-left: 2rem;
+  }
+  .skills h2 {
+      font-size: 16px;
+  }
+  .skills button {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+}

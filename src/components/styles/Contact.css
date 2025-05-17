@@ -1,0 +1,192 @@
+.contact-container {
+    height:100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .contact-look {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    animation: moveInLook 3s forwards; /* Add animation to the contact-look */
+  }
+  
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .girl-character {
+    width: 500px; /* Adjust the size of the character image */
+    height: auto;
+    border-radius: 10rem;
+    object-fit: cover; /* This will crop the image */
+    object-position: bottom; /* Crop from the bottom */
+  }
+  
+  .contact-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease-out;
+    margin-right: 4rem;
+    height: 400px;
+    width: 400px;
+  }
+  
+  .contact-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color:  rgba(0, 0, 0, 0.2);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:  rgba(0,0,0, 0.5);
+  }
+  
+  /* Animation for contact-container */
+  @keyframes moveIn {
+    0% {
+      transform: translateX(-100%); /* Start from left off-screen */
+    }
+    50% {
+      transform: translateX(0); /* Move to center */
+    }
+    100% {
+      transform: translateX(0); /* Stay at the final position (center) */
+    }
+  }
+  
+  /* New Animation for contact-look */
+  @keyframes moveInLook {
+    0% {
+      transform: translateX(-100%); /* Start from left off-screen */
+    }
+    50% {
+      transform: translateX(0); /* Move to center */
+    }
+    100% {
+      transform: translateX(0); /* Stay at the final position (center) */
+    }
+  }
+  
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Adds a subtle upward motion */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* For screens 1024px and below */
+@media screen and (max-width: 1024px) {
+  .girl-character {
+    width: 400px; /* Adjust the image size */
+  }
+
+  .contact-form {
+    width: 350px; /* Adjust form width */
+  }
+
+  .contact-title {
+    font-size: 1.8rem; /* Adjust title size */
+  }
+
+  input[type="submit"] {
+    width: 120px; /* Adjust button width */
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center; /* Stack the content vertically */
+  }
+
+  .girl-character {
+    width: 300px; /* Adjust the image size */
+    margin-bottom: 2rem; /* Add space between image and form */
+  }
+
+  .contact-form {
+    width: 80%; /* Adjust form width to fit smaller screens */
+    margin-right: 0;
+  }
+
+  .contact-title {
+    font-size: 1.6rem; /* Adjust title size */
+  }
+
+  input[type="submit"] {
+    width: 100%; /* Full-width button */
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* For screens 480px and below */
+@media screen and (max-width: 480px) {
+  .girl-character {
+    width: 200px; /* Further reduce image size */
+  }
+
+  .contact-form {
+    width: 80%; /* Make form full width */
+    height: auto; /* Adjust height to fit content */
+    margin-right: 0;
+  }
+
+  .contact-title {
+    font-size: 1rem; /* Adjust title size */
+  }
+
+
+
+  input[type="submit"] {
+    width: 100%; /* Full-width button */
+  }
+}
