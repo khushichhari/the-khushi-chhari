@@ -40,17 +40,20 @@ export default function About() {
           <button>CSS</button>
           <button>JavaScript</button>
           <button>React.js</button>
-          <button>C, C++</button>
-          <button>Python</button>
+          <button>Express.js</button>
           <button>MongoDB</button>
           <button>SQL</button>
+          <button>C, C++</button>
+          <button>Python</button>
+      
 
           <h2>Tools</h2>
           <button>Canva</button>
-          <button>Figma</button>
+          <button>Bootstrap</button>
           <button>Vercel</button>
           <button>Git</button>
           <button>GitHub</button>
+          <button>VS Code</button>
         </div>
 
         <div className="abt-para fade-in">
