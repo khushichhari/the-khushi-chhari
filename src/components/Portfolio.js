@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./styles/Portfolio.css";
 import GIF from "./assets/port.gif";
-import Resume from "./assets/Resume - Khushi Chhari.pdf";
 import NetflixImage from "./assets/Netflix.png";
 import ReferralImage from "./assets/Referral.png";
 import MainImage from "./assets/Main.png";
@@ -19,31 +18,35 @@ export default function Portfolio() {
     {
       image: MainImage,
       title: "Harmaig Main website (frontend)",
-      liveUrl: "https://harmaig-main-website-frontend-mdn92hbi1-khushi-chharis-projects.vercel.app/",
+      liveUrl:
+        "https://harmaig-main-website-frontend-mdn92hbi1-khushi-chharis-projects.vercel.app/",
     },
     {
       image: DairyImage,
       title: "Diary + Todo list",
-      liveUrl:" https://drive.google.com/file/d/1-XbPp9KKUcNNdQxNbbjiX_m94gT7M1tY/view?usp=drive_link",
+      liveUrl:
+        "https://drive.google.com/file/d/1-XbPp9KKUcNNdQxNbbjiX_m94gT7M1tY/view?usp=drive_link",
     },
     {
       image: CliniQImage,
       title: "Clinic-Queue-Manager",
-      liveUrl: "https://drive.google.com/file/d/1b7C7lfwxPudmUNpoY6fE144ZK9OjRdFY/view?usp=drive_link",
+      liveUrl:
+        "https://drive.google.com/file/d/1b7C7lfwxPudmUNpoY6fE144ZK9OjRdFY/view?usp=drive_link",
     },
     {
       image: GameImage,
       title: "Tic-Tac-Toe Game",
-      liveUrl: "https://tic-tac-toe-game-cfbia24hd-khushi-chharis-projects.vercel.app/",
+      liveUrl:
+        "https://tic-tac-toe-game-cfbia24hd-khushi-chharis-projects.vercel.app/",
     },
     {
       image: NetflixImage,
       title: "Netflix Clone",
-      liveUrl: "https://netflix-clone-website-by-khushi-fgoqfx87i.vercel.app/",
+      liveUrl:
+        "https://netflix-clone-website-by-khushi-fgoqfx87i.vercel.app/",
     },
   ];
 
-  // Observer logic for fade-in animation
   const observerRef = useRef();
 
   useEffect(() => {
@@ -103,7 +106,6 @@ export default function Portfolio() {
               />
               <div className="card-body">
                 <h5 className="card-title">{card.title}</h5>
-
                 {card.liveUrl && (
                   <a
                     href={card.liveUrl}
@@ -125,7 +127,11 @@ export default function Portfolio() {
         <h2>Interested in knowing more about me? Check out my GitHub!</h2>
         <h2>Your Next Hire Is Just One Click Away!</h2>
         <div className="port-buttons">
-          <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://khushi-resume.vercel.app" // Replace with your actual Vercel resume link
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button>Resume</button>
           </a>
           <a
