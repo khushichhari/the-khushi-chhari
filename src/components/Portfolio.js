@@ -128,7 +128,7 @@ export default function Portfolio() {
         <h2>Your Next Hire Is Just One Click Away!</h2>
         <div className="port-buttons">
           <a
-            href="https://khushi-resume.vercel.app" // Replace with your actual Vercel resume link
+            href="https://resume-khushi-chhari.vercel.app/" // Replace with your actual Vercel resume link
             target="_blank"
             rel="noopener noreferrer"
           >
